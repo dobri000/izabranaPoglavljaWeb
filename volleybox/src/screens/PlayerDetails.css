@@ -1,0 +1,145 @@
+/* PlayerDetails.css */
+
+.player-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Postavi elemente uz levu stranu */
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    height: 650px;
+  }
+  
+  .player-details h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .player-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Postavi elemente uz levu stranu */
+    width: 100%; /* Povećaj širinu da se elementi protežu po širini */
+  }
+  
+  .player-image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .details {
+    margin-left: 20px; /* Dodaj malo razmaka između slike i detalja */
+    margin-top: 10px;
+  }
+  
+  .player-details h2 {
+    font-size: 1.4rem; /* Povećava veličinu naslova angažovanja */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #007bff; /* Promeni boju naslova angažovanja */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Dodaje senku naslovu angažovanja */
+  }
+  
+  .player-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .player-details li {
+    margin: 5px 0;
+    font-size: 1.1rem; /* Povećava veličinu teksta angažovanja */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #007bff; /* Promeni boju teksta angažovanja */
+    font-weight: bold; /* Podebljava tekst angažovanja */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Dodaje senku tekstu angažovanja */
+  }
+  
+  .player-details {
+    position: relative;
+  }
+  
+  .action-buttons {
+    position: absolute;
+    top: 10px; /* Podešavanje visine od vrha ekrana */
+    right: 10px; /* Podešavanje rastojanja od desnog ruba ekrana */
+  }
+  
+  .update-button,
+.delete-button,
+.add-engagement {
+  padding: 10px 20px;
+  background-color: #007bff; /* Boja pozadine */
+  color: #fff; /* Boja teksta */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efekat promene boje pri hoveru */
+  margin: 5px;
+}
+
+.update-button:hover,
+.delete-button:hover,
+.add-engagement:hover {
+  background-color: #0056b3; /* Boja pozadine pri hoveru */
+}
+
+.player-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.player-details li {
+  position: relative;
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+}
+
+.player-details li span {
+  margin-right: 20px; /* Dodajte razmak između slike i imena kluba */
+}
+
+.team-image {
+  height: 50px;
+  width: 50px;
+}
+
+.team-name {
+  flex-grow: 1; /* Rastezanje imena kluba kako bi zauzelo preostali prostor */
+  text-align: left; /* Centralno poravnanje imena kluba */
+}
+
+.season {
+  margin-left: auto; /* Podešavanje margine lijevo kako bi se sezona postavila na desno */
+}
+
+.player-engagements {
+  position: absolute;
+  top: 100px; /* Podešavanje visine od vrha ekrana */
+  right: 40px;
+}
+
+.delete {
+  display: none;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+li:hover .delete {
+  display: inline;
+}

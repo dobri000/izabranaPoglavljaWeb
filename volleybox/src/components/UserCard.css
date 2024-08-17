@@ -1,0 +1,6 @@
+.user-item{
+    display: grid;
+    grid-template-columns: 100px 100px 300px 100px 100px;
+    gap: 20px;
+    padding: 10px;
+}

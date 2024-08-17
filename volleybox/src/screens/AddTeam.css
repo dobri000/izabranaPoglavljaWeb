@@ -1,0 +1,52 @@
+/* Dodajte stilove za glavni kontejner */
+.add-team {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Dodajte stilove za naslov */
+  .add-team h1 {
+    color: #333;
+  }
+  
+  /* Dodajte stilove za unose forme */
+  .add-team form div {
+    margin-bottom: 10px;
+  }
+  
+  .add-team label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .add-team input[type="text"],
+  .add-team input[type="date"],
+  .add-team input[type="number"],
+  .add-team select,
+  .add-team input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Dodajte stilove za gumb */
+  .add-team button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-team button:hover {
+    background-color: #0056b3;
+  }
+  

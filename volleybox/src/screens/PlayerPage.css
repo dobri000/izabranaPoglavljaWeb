@@ -1,0 +1,57 @@
+/* PlayerPage.css */
+.full-width {
+  width: 100%;
+}
+
+.container {
+  max-width: 800px; /* Prilagodite širinu po potrebi */
+  margin: 0 auto;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.form-group {
+  display: grid;
+}
+
+/* Stilizacija input polja */
+.form-control {
+  width: 100%;
+  max-width: 400px; /* Prilagodite širinu po potrebi */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Stilizacija naslova */
+h1 {
+  font-size: 24px;
+}
+
+/* Stilizacija dugmadi */
+.btn {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* Stilizacija linka za dodavanje igrača */
+#addButton {
+  margin-top: 10px;
+}
+
+/* Stilizacija liste igrača */
+.player-list {
+  margin-top: 20px;
+}
+
+/* Stilizacija kartica igrača (player-card) */
+.player-card {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
