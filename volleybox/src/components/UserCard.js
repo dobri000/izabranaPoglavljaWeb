@@ -3,6 +3,7 @@ import './UserCard.css';
 
 const UserCard = ({data, ...rest}) => {
     const [role, setRole] = useState(data.role);
+    const updateEditable = (data.role === 'ADMIN' && sessionStorage.getItem('email') !== 'dimitrije.dobrijevic@gmail.com') || data.email === 'dimitrije.dobrijevic@gmail.com';
     
     const updateUserRole = async () => {
         const options = {
@@ -34,12 +35,12 @@ const UserCard = ({data, ...rest}) => {
             <span>{data.firstname}</span>
             <span>{data.lastname}</span>
             <span>{data.email}</span>
-            <select value={role} onChange={handleChange} disabled={data.email === 'dimitrije.dobrijevic@gmail.com' || data.email == sessionStorage.getItem('email')}>
+            <select value={role} onChange={handleChange} disabled={updateEditable}>
                 <option value="ADMIN">ADMIN</option>
                 <option value="EDITOR">EDITOR</option>
                 <option value="USER">USER</option>
             </select>
-            {data.role === 'ADMIN' ? (<></>) : (<button onClick={updateUserRole}>Update</button>)}
+            {updateEditable ? (<></>) : (<button onClick={updateUserRole}>Update</button>)}
         </div>
     )
 }
